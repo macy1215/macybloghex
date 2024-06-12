@@ -4,8 +4,8 @@
 
 # Site
 title: Macy 的部落格
-subtitle: Macy分享學習記錄與作品的地方
-description: 前端學習紀錄，紀錄成功成為前端工程師前的心路歷程。也記錄自己實作時遇到的技術問題。並放置自己切版或是專案的作品
+subtitle: 'Macy分享學習記錄與作品的地方'
+description: '前端學習紀錄，紀錄成功成為前端工程師前的心路歷程。也記錄自己實作時遇到的技術問題。並放置自己切版或是專案的作品'
 keywords: 前端工程師, Macy, 網頁切版
 author: Macy Huang
 language: zh-TW
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://macy1215.github.io/macybloghex/
+url: https://github.com/macy1215/macybloghex
 permalink: posts/:title/
 permalink_defaults:
 pretty_urls:
