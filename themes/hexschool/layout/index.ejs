@@ -3,8 +3,8 @@
     <div class="row flex-md-row-reverse mb-7 mb-md-9">
       <div class="col-12 col-md-7 px-0 overflow-hidden">
         <picture>
-          <source media="(min-width: 768px)" srcset="/images/hero-lg.png">
-          <img class="w-100" src="/images/hero-sm.png" alt="hero banner">
+          <source media="(min-width: 768px)" srcset="<%= url_for(`/images/hero-lg.png`) %>">
+          <img class="w-100" src="<%= url_for(`/images/hero-sm.png`) %>" alt="hero banner">
         </picture>
       </div>
       <div class="col-10 col-md-4 mx-auto mx-md-0">
@@ -33,12 +33,12 @@
     <h2 class="title-deco py-7 py-md-9 text-center text-primary-700 tracking-wide fw-semibold">作品介紹</h2>
     <div
       class="pt-9"
-      style="background-image: url('/images/homepage-work1-bg.png');background-repeat: no-repeat;background-position: center;background-size: cover;"
+      style="background-image: url('<%= url_for(`/images/homepage-work1-bg.png`) %>');background-repeat: no-repeat;background-position: center;background-size: cover;"
     >
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-xl-7">
-            <img class="img-fluid" src="/images/homepage-work1.png" alt="work1">
+            <img class="img-fluid" src="<%= url_for(`/images/homepage-work1.png`) %>" alt="work1">
           </div>
           <div class="col-12 col-md-6 col-xl-5 d-none d-md-flex flex-md-column justify-content-center">
             <div class="px-7 py-9 bg-white-overlay rounded-5">
@@ -110,7 +110,7 @@
 
   <section
     class="pt-7 pb-7 pb-md-9"
-    style="background-image: url('/images/homepage-services-bg.png');
+    style="background-image: url('<%= url_for(`/images/homepage-services-bg.png`) %>');
     background-repeat: no-repeat;
     background-size: cover;"
   >
@@ -120,7 +120,7 @@
         <div class="col-12 col-md-6 col-lg-3">
           <div class="bg-service d-flex flex-column justify-content-center align-items-center rounded-4">
             <div class="position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
-              <img class="mb-4" src="/images/service-item-visual.svg" alt="visual design">
+              <img class="mb-4" src="<%= url_for(`/images/service-item-visual.svg`) %>" alt="visual design">
               <h3 class="text-primary-50">平面設計</h3>
             </div>
           </div>
@@ -128,7 +128,7 @@
         <div class="col-12 col-md-6 col-lg-3">
           <div class="bg-service d-flex flex-column justify-content-center align-items-center rounded-4">
             <div class="position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
-              <img class="mb-4" src="/images/service-item-ui.svg" alt="ui design">
+              <img class="mb-4" src="<%= url_for(`/images/service-item-ui.svg`) %>" alt="ui design">
               <h3 class="text-primary-50">UI 設計</h3>
             </div>
           </div>
@@ -136,7 +136,7 @@
         <div class="col-12 col-md-6 col-lg-3">
           <div class="bg-service d-flex flex-column justify-content-center align-items-center rounded-4">
             <div class="position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
-              <img class="mb-4" src="/images/service-item-html&css.svg" alt="html and css">
+              <img class="mb-4" src="<%= url_for(`/images/service-item-html&css.svg`) %>" alt="html and css">
               <h3 class="text-primary-50">切版服務</h3>
             </div>
           </div>
@@ -144,7 +144,7 @@
         <div class="col-12 col-md-6 col-lg-3">
           <div class="bg-service d-flex flex-column justify-content-center align-items-center rounded-4">
             <div class="position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
-              <img class="mb-4" src="/images/service-item-front-end.svg" alt="visual design">
+              <img class="mb-4" src="<%= url_for(`/images/service-item-front-end.svg`) %>" alt="visual design">
               <h3 class="text-primary-50">前端開發</h3>
             </div>
           </div>
@@ -180,7 +180,7 @@
           <% page.posts.slice(0, limit).each((post) => { %>
             <div class="swiper-slide col-12 col-md-6 col-lg-4">
               <div class="card border-0">
-                <img src="<%= post.cover %>" class="card-img-top rounded-3" alt="article-1">
+                <img src="<%= url_for(post.cover) %>" class="card-img-top rounded-3" alt="article-1">
                 <div class="card-body">
                   <h5 class="card-title mb-3 text-primary-700"><%= post.title %></h5>
                   <div class="d-flex justify-content-between align-items-center">
