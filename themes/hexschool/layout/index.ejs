@@ -1,14 +1,14 @@
 <main>
   <div class="container-fluid">
-    <div class="container my-7">
+    <div class="my-7">
       <div class="row flex-md-row-reverse mb-md-9">
-        <div class="col-12 col-md-5 px-0 overflow-hidden">
+        <div class="col-12 col-md-6 overflow-hidden">
           <picture>
-            <source media="(min-width: 768px)" srcset="<%= url_for(`/images/avator.png`) %>">
-            <img class="w-50 ps-4" src="<%= url_for(`/images/avator2.png`) %>" alt="hero banner">
+            <source media="(min-width: 768px)" srcset="<%= url_for(`/images/avator2.png`) %>">
+            <img class="w-50 px-9" src="<%= url_for(`/images/avator2.png`) %>" alt="hero banner">
           </picture>
         </div>
-        <div class="col-10 col-md-6 mx-auto mx-md-0">
+        <div class="col-10 col-md-4 mx-auto mx-md-0">
           <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start h-100">
             <h1 class="mb-4 text-primary-700 fw-semibold">Hi~我是Macy!一個熱愛學習的人</h1>
             <p class="text-center text-md-start text-primary-600 fs-4 mb-0">
@@ -39,7 +39,7 @@
   </div>
   
   <section>
-    <h2 class="title-deco py-7 py-md-9 text-center text-primary-700 tracking-wide fw-semibold">作品介紹</h2>
+    <h2 class="title-deco py-7 py-md-9 text-center text-primary-700 tracking-wide fw-semibold">我的作品</h2>
     <div
       class="pt-9"
       style="background-image: url('<%= url_for(`/images/homepage-work1-bg.png`) %>');background-repeat: no-repeat;background-position: center;background-size: cover;"
@@ -61,7 +61,7 @@
               <div class="d-flex justify-content-center">
                 <a
                   class="btn btn-lg px-6 py-3 fs-5 fw-bold text-primary-50 bg-primary-900 icon-link icon-link-hover link-primary-500"
-                  href="/collection"
+                  href="<%= url_for (`/collection/`) %>"
                 >
                   完整介紹
                   <span class="bi material-symbols-outlined align-text-bottom">arrow_forward</span>
@@ -83,7 +83,7 @@
               <div class="d-flex justify-content-center">
                 <a
                   class="btn btn-lg px-6 py-3 fs-5 fw-bold text-primary-50 bg-primary-900 icon-link icon-link-hover link-primary-500"
-                  href="/collection"
+                  href="<%= url_for (`/collection/`) %>"
                 >
                   完整介紹
                   <span class="bi material-symbols-outlined align-text-bottom">arrow_forward</span>
