@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Macy 的部落格
-subtitle: 'Macy分享學習記錄與作品的地方'
-description: '前端學習紀錄，紀錄成功成為前端工程師前的心路歷程。也記錄自己實作時遇到的技術問題。並放置自己切版或是專案的作品'
-keywords: 前端工程師, Macy, 網頁切版
-author: Macy Huang
-language: zh-TW
-timezone: ''
+title: Macy 的部落格 #網站標題
+subtitle: 'Macy分享學習記錄與作品的地方' #網站副標題
+description: '前端學習紀錄，紀錄成功成為前端工程師前的心路歷程。也記錄自己實作時遇到的技術問題。並放置自己切版或是專案的作品'  #網站描述(SEO優化相關)
+keywords: 前端工程師, Macy, 網頁切版 #網站的關鍵字(SEO優化相關)
+author: Macy Huang #網站作者的名字
+language: zh-TW #網站使用的語系(會跟顯示內容相關)
+timezone: ''  #網站使用的時區(預設電腦系統的時區)
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -107,7 +107,7 @@ theme: hexschool
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/macy1215/macybloghex
+  repo: https://github.com/macy1215/macybloghex.git
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
-  message: 'update'
+  # message: 'update'
