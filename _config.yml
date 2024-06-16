@@ -107,7 +107,7 @@ theme: hexschool
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/macy1215/macybloghex.git
+  repo: https://github.com/macy1215/macybloghex
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
   # message: 'update'
